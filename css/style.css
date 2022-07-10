@@ -36,6 +36,12 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   color: #66BFBF;
+  font-size: 30px;
+
+  /* These adjustments are needed to remove the gap between mid and bot container, so the white background color
+     does not appear. Margin is to prevent that and padding is for spacing purposes */
+  margin-top: 0px;
+  padding-top:20px;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
@@ -46,7 +52,7 @@ h3{
 /************* Class Selectors ***************/
 
 .bottom-container{
-
+  background-color: #E4F9F5;
 }
 
 .bottom-cloud{
@@ -67,8 +73,9 @@ h3{
   height: auto;
 }
 
-.middle-container {
 
+.middle-container {
+ background-color: #DAEAF1;
 }
 
 .lead{
@@ -80,23 +87,23 @@ h3{
   border-radius: 50%;
   width: 50%;
   /* Changed height in order for it to look as round as possible compared to system-integration image */
-  height: 30%;
+  height: 40%;
   /* float allows you to have text aligned with the image */
-  float: left;
-
-  /* To add space between the image and text */
-  padding-right: 30px;
+  float: right;
+  padding-left: 1rem;
 }
-
 
 .schools{
   text-align: left;
 }
 
+.skill-height{
+padding-top: 70px;
+}
 
 .skill-row{
-  width: 50%;
-  margin: 100px auto 100px auto;
+  width: 70%;
+  margin:100px auto 200px auto;
   /* This will override the text-align: center in the body */
   text-align: left;
   line-height: 2;
@@ -105,6 +112,8 @@ h3{
 .sys{
   text-decoration: underline;
 }
+
+
 
 .system-integration{
   border-radius: 70%;
@@ -118,7 +127,10 @@ h3{
 
   /* To add space between the image and text */
   padding-right: 30px;
+  margin-bottom: 40px;
+
 }
+
 .top-cloud{
   /*
      Using absolute allows the cloud to be aligned based on the parent class which is div
@@ -138,14 +150,20 @@ h3{
   position:relative;
   /* Added padding to drop the text and clouds a little bit, relative to the top side */
   padding-top: 100px;
-
 }
+
+
 
 
 
 /************* ID Selectors ***************/
 #me {
+  margin-top: 2rem;
   border-radius: 50%;
+}
+
+#middle-bottom-hr{
+  margin-bottom: 0px;
 }
 
 #sys-engineer{
