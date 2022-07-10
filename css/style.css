@@ -4,7 +4,22 @@
 
 /************* Tag Selectors ***************/
 
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px;
+
+  /* Removing the underline that comes with the hyperlink */
+  text-decoration: none;
+}
+
+/* Using hover state so users know this is clickable since I removed the underline for hyperlink */
+a:hover{
+  color: #EAF6F6;
+}
+
 body{
+  color: #40514E;
   margin: 0;
   text-align: center;
   /* The link for this font is in the head of index.html */
@@ -36,30 +51,70 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   color: #66BFBF;
-  font-size: 30px;
+  font-size: 2.5rem;
 
   /* These adjustments are needed to remove the gap between mid and bot container, so the white background color
      does not appear. Margin is to prevent that and padding is for spacing purposes */
   margin-top: 0px;
   padding-top:20px;
+  padding-bottom: 10px;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
   color: #11999E;
+  font-size: 1.5rem;
+}
+
+p{
+  line-height: 2;
 }
 
 
 /************* Class Selectors ***************/
 
 .bottom-container{
-  background-color: #E4F9F5;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
 }
 
 .bottom-cloud{
   /* The changes below are based on the margins of the top-container (its parent)*/
   position: absolute;
-  left: 300px;
+  left: 250px;
   bottom: 300px;
+}
+
+.copy-right{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }
 
 .cloud1 {
@@ -73,14 +128,39 @@ h3{
   height: auto;
 }
 
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.hr-dotted{
+  border-style: dotted;
+  border-top: none;
+  width: 50px;
+  border-width: thick;
+  color: grey;
+  margin: 100px auto 100px auto;
+
+}
+
+.footer-link{
+  padding-top: 20px;
+}
+
 
 .middle-container {
- background-color: #DAEAF1;
+ /* background-color: #DAEAF1; */
+padding-bottom: 70px;
 }
 
 .lead{
+  font-size: 1rem;
   text-align: center;
   color: #727878;
+}
+
+.pro-skill-description{
+  font-size: 1rem;
 }
 
 .programming{
@@ -128,7 +208,14 @@ padding-top: 70px;
   /* To add space between the image and text */
   padding-right: 30px;
   margin-bottom: 40px;
+  font-size: 1rem;
 
+}
+
+.text{
+  font-size: 1rem;
+  width: 30%;
+  margin: auto;
 }
 
 .top-cloud{
@@ -140,12 +227,12 @@ padding-top: 70px;
 
   /* The changes below are based on the margins of the top-container (its parent)*/
   position: absolute;
-  right: 300px;
+  right: 250px;
   top: 50px;
 }
 
 .top-container {
-  background-color: #E4F9F5;
+  background-color: #E4F6F6;
   /* Added position in order to have the top and bottom clouds be relative to this container rather than the body */
   position:relative;
   /* Added padding to drop the text and clouds a little bit, relative to the top side */
@@ -158,13 +245,20 @@ padding-top: 70px;
 
 /************* ID Selectors ***************/
 #me {
-  margin-top: 2rem;
+  margin-top: 6rem;
   border-radius: 50%;
 }
 
 #middle-bottom-hr{
-  margin-bottom: 0px;
+  margin: 100px auto 100px auto;
+  border-style: dotted;
+  border-top: none;
+  width: 50px;
+  border-width: thick;
+  color: grey;
+  /* margin: 40px auto 40px auto; */
 }
+
 
 #sys-engineer{
   font-size: 2.5rem;
