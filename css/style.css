@@ -1,0 +1,114 @@
+/********************* External ***********************/
+    /* Can change the display values from block to inline to inline-block & none */
+
+
+/************* Tag Selectors ***************/
+
+body{
+  margin: 0;
+  text-align: center;
+  /* The link for this font is in the head of index.html */
+  /* The font will default to serif if Merriweather is not possible */
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  /* Had to remove margin-top in order to use width */
+  /* margin-top: 0; */
+
+  /* Will center the item vertically or automatically */
+  /* In this case i specified margin left and right are auto, and top and bottom are 0 (by default) */
+  margin: 0 auto 0 auto;
+
+  /* Increased width of text - font size pretty much */
+  /* width: 10%;  */
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/************* Class Selectors ***************/
+
+.bottom-container{
+
+}
+
+.bottom-cloud{
+  /* The changes below are based on the margins of the top-container (its parent)*/
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.cloud1 {
+  width: 200px;
+  height: auto;
+}
+
+
+.cloud2{
+  width: 200px;
+  height: auto;
+}
+
+.system-integration{
+  border-radius: 70%;
+  width: 600px;
+  height: auto;
+}
+
+.middle-container {
+
+}
+
+.lead{
+  text-align: center;
+  color: #727878;
+}
+
+.programming{
+  border-radius: 50%;
+}
+
+.schools{
+  text-align: left;
+}
+
+.sys{
+  text-decoration: underline;
+}
+
+.top-cloud{
+  /*
+     Using absolute allows the cloud to be aligned based on the parent class which is div
+     and not the body. This is the reason for why now the cloud is above of the mountain
+     rather than on the left hand side of it. Using relative would not have the same affect.
+  */
+
+  /* The changes below are based on the margins of the top-container (its parent)*/
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  /* Added position in order to have the top and bottom clouds be relative to this container rather than the body */
+  position:relative;
+  /* Added padding to drop the text and clouds a little bit, relative to the top side */
+  padding-top: 100px;
+
+}
+
+
+
+/************* ID Selectors ***************/
+#me {
+  border-radius: 50%;
+}
