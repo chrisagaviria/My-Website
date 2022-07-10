@@ -16,20 +16,30 @@ h1{
   /* Had to remove margin-top in order to use width */
   /* margin-top: 0; */
 
-  /* Will center the item vertically or automatically */
-  /* In this case i specified margin left and right are auto, and top and bottom are 0 (by default) */
-  margin: 0 auto 0 auto;
+  /* margin is based on top - right - bottom - left */
+  margin: 50px auto 0 auto;
+
 
   /* Increased width of text - font size pretty much */
   /* width: 10%;  */
   font-family: 'Sacramento', cursive;
-  font-size: 50px;
+
+  /* to make it not dynamic and equivalent to 90px use 562.5% or use 5.625em for 90px
+    So, when someone decides to modify their browser text, the text will get larger or smaller based on it
+    In this case we are using root em instead of em alone to avoid the addition of font-size from a parent
+    which could potentially enlarge the text or make it smaller.
+    */
+  font-size: 5.625rem;
+  color: #66BFBF;
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #66BFBF;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
+  color: #11999E;
 }
 
 
@@ -57,12 +67,6 @@ h3{
   height: auto;
 }
 
-.system-integration{
-  border-radius: 70%;
-  width: 600px;
-  height: auto;
-}
-
 .middle-container {
 
 }
@@ -74,16 +78,47 @@ h3{
 
 .programming{
   border-radius: 50%;
+  width: 50%;
+  /* Changed height in order for it to look as round as possible compared to system-integration image */
+  height: 30%;
+  /* float allows you to have text aligned with the image */
+  float: left;
+
+  /* To add space between the image and text */
+  padding-right: 30px;
 }
+
 
 .schools{
   text-align: left;
+}
+
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  /* This will override the text-align: center in the body */
+  text-align: left;
+  line-height: 2;
 }
 
 .sys{
   text-decoration: underline;
 }
 
+.system-integration{
+  border-radius: 70%;
+  /* Image is too large so I modified the width using a % rather than a pixel. Using pixel will require to use height */
+  width: 50%;
+  /* width 600px; */
+  /* height: auto; */
+
+  /* float allows you to have text aligned with the image */
+  float: left;
+
+  /* To add space between the image and text */
+  padding-right: 30px;
+}
 .top-cloud{
   /*
      Using absolute allows the cloud to be aligned based on the parent class which is div
@@ -111,4 +146,8 @@ h3{
 /************* ID Selectors ***************/
 #me {
   border-radius: 50%;
+}
+
+#sys-engineer{
+  font-size: 2.5rem;
 }
